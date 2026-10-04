@@ -1,0 +1,9 @@
+.exit__clear {
+  min-height: var(--target);
+  border: 0;
+  background: none;
+  color: var(--danger);
+  font-weight: 700;
+  font-size: var(--fs-secondary);
+  width: 100%;
+}

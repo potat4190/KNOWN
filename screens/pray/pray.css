@@ -1,0 +1,61 @@
+.pray__who {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.pray__face {
+  width: 44px;
+  height: 44px;
+  border-radius: 22px;
+  object-fit: cover;
+}
+.pray__lines {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.say {
+  min-height: 52px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-inline-start: 4px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+  font-style: italic;
+  text-align: start;
+}
+.say[aria-pressed='true'] {
+  border-color: var(--lamp);
+  border-width: 2px;
+  border-inline-start-width: 4px;
+  background: var(--warm);
+}
+.pray__card {
+  overflow: hidden;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-card);
+  background: var(--surface);
+}
+.pray__card:focus-within {
+  border-color: var(--focus);
+}
+.pray__stay {
+  padding: 14px 14px 4px;
+  border-inline-start: 4px solid var(--lamp);
+  background: var(--warm);
+  font-style: italic;
+}
+.pray__input {
+  display: block;
+  width: 100%;
+  min-height: 180px;
+  padding: 14px;
+  border: 0;
+  background: transparent;
+  font-size: var(--fs-body);
+  line-height: calc(var(--lh-body) * var(--line-scale));
+  resize: vertical;
+}
+.pray__input:focus {
+  outline: none;
+}

@@ -1,0 +1,40 @@
+.sit__stage {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 240px;
+  overflow: hidden;
+  border-radius: 24px;
+}
+.sit__scene {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+}
+.sit__stage .lamp {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.sit__cues {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  min-height: 110px;
+}
+.cue {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  animation: fade 0.9s ease-out both;
+}
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

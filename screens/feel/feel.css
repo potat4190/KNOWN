@@ -1,0 +1,8 @@
+.feel__panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.feel__panel[hidden] {
+  display: none;
+}

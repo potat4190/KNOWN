@@ -1,0 +1,10 @@
+.moment__content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.moment__part {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
